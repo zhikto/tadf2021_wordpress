@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+$red: #FF0000;
+$green: #00FF00;
+$blue: #0000FF;
+$black: #000000;
+$white: #FFFFFF;
+
+.container {
+    width: 100%;
+}
+
+.gallery-title {
+    position: fixed;
+}
+
+.side-bar {
+    height: 100vh !important;
+    position: fixed;
+    justify-content: center;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .work-container {
+        width: 100%;
+        padding: 160px 200px;
+        box-sizing: border-box;
+    }
+
+    .work-image {
+        width: 100%;
+        z-index: 100;
+        margin-bottom: 40px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .work-info {
+        width: 100%;
+        display: flex;
+
+        .work-about {
+            width: 40%;
+            box-sizing: border-box;
+            padding-right: 24px;
+
+            p {
+                line-height: 1.5em;
+            }
+
+            //タイトル
+            p:nth-child(1) {
+                font-size: 48px;
+            }
+
+            //タイトル英語
+            p:nth-child(2) {
+                font-size: 32px;
+                margin-bottom: 24px;
+            }
+
+            //サイズ
+            p:nth-child(3) {
+                font-size: 20px;
+                margin-bottom: 24px;
+
+                span {
+                    font-size: 16px;
+                }
+            }
+
+            //サブ説明
+            p:nth-child(4) {
+                font-size: 20px;
+                margin-bottom: 24px;
+            }
+
+            //作者名
+            p:nth-child(5) {
+                font-size: 16px;
+            }
+
+            //作者所属・学年
+            p:nth-child(6) {
+                font-size: 12px;
+            }
+        }
+
+        .work-description {
+            width: 60%;
+
+            p {
+                font-size: 16px;
+                line-height: 1.5em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .side-bar {
+        width: 100% !important;
+        height: 80px !important;
+        padding: 16px !important;
+        bottom: 0;
+    }
+    
+    .content {
+        .work-container {
+            padding: 160px 88px;
+        }
+    }
+}
+
+@media screen and (max-width: 799px) {
+
+    .content {
+        .work-container {
+            padding: 160px 24px;
+        }
+    
+        .work-image {
+            margin-bottom: 16px;
+        }
+    
+        .work-info {
+            width: 100%;
+            display: block;
+    
+            .work-about {
+                width: 100%;
+                margin-right: 0;
+    
+                //タイトル
+                p:nth-child(1) {
+                    font-size: 32px;
+                }
+    
+                //タイトル英語
+                p:nth-child(2) {
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+    
+                //サイズ
+                p:nth-child(3) {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+    
+                    span {
+                        font-size: 14px;
+                    }
+                }
+    
+                //サブ説明
+                p:nth-child(4) {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+    
+                //作者名
+                p:nth-child(5) {
+                    font-size: 14px;
+                }
+
+                //作者所属・学年
+                p:nth-child(6) {
+                    font-size: 12px;
+                }
+            }
+    
+            .work-description {
+                width: 100%;
+                padding-top: 40px;
+    
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

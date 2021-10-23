@@ -1,0 +1,497 @@
+@charset "UTF-8";
+
+$red: #ff0000;
+$green: #00ff00;
+$blue: #0000ff;
+$black: #000000;
+$white: #ffffff;
+
+//レスポンシブ
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+//サイドバー
+.side-bar {
+    position: relative;
+    flex: 0 0 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+//フロアカラー
+#nav-color,
+#nav-color-f {
+    position: absolute;
+    z-index: -9999;
+    top: 0;
+    width: 8px;
+    height: 100vh; /* Fallback */
+    height: calc(var(--vh, 1vh) * 100);
+    transition: 0.3s;
+}
+
+#nav-color {
+    right: 0;
+}
+
+#nav-color-f {
+    left: 0;
+}
+
+//ロゴ部分
+.top-logo {
+    display: flex;
+
+    a {
+        margin: 16px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+//フロアメニュー
+.level-nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    li {
+        list-style-type: none;
+
+        a {
+            display: block;
+            width: 56px;
+            height: 56px;
+            line-height: 56px;
+            margin: 20px;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 50%;
+            text-decoration: none;
+            color: $black;
+            transition: 0.3s;
+        }
+    }
+
+    //各階のホバー時の色指定
+    //1f
+    .menu-item-220,
+    .menu-item-224 {
+        a:hover {
+            transition: 0.3s;
+            color: white;
+            background-color: $red;
+        }
+    }
+
+    .menu-item-220.current-menu-item,
+    .menu-item-224.current-menu-item {
+        a {
+            color: white;
+            background-color: $red;
+        }
+    }
+
+    //2f
+    .menu-item-221,
+    .menu-item-223 {
+        a:hover {
+            transition: 0.3s;
+            background-color: $green;
+        }
+    }
+
+    .menu-item-221.current-menu-item,
+    .menu-item-223.current-menu-item {
+        a {
+            background-color: $green;
+        }
+    }
+
+    //3f
+    .menu-item-222,
+    .menu-item-225 {
+        a:hover {
+            transition: 0.3s;
+            color: white;
+            background-color: $blue;
+        }
+    }
+
+    .menu-item-222.current-menu-item,
+    .menu-item-225.current-menu-item {
+        a {
+            color: white;
+            background-color: $blue;
+        }
+    }
+}
+
+//戻るボタン
+.back-nav {
+    display: block;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    margin: 20px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+    background-color: $black;
+    box-sizing: border-box;
+
+    img {
+        width: 15px;
+        vertical-align: text-bottom;
+    }
+}
+
+//ソーシャルリンク
+.social-link {
+    list-style-type: none;
+    display: flex;
+
+    li {
+        list-style-type: none;
+
+        a {
+            display: block;
+            padding: 4px;
+
+            img {
+                width: 32px;
+            }
+        }
+    }
+}
+
+//ギャラリータイトル
+.gallery-title {
+    z-index: 100;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    color: $black;
+    padding: 40px;
+
+    p:nth-child(1) {
+        font-size: 24px;
+        writing-mode: vertical-rl;
+    }
+    p:nth-child(2) {
+        font-size: 64px;
+        letter-spacing: -0.09em;
+    }
+}
+
+//ギャラリーナンバー
+.gallery-num {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 40px;
+
+    p {
+        overflow: hidden;
+        font-size: 20px;
+        color: $black;
+
+        .letter {
+            display: inline-block;
+        }
+    }
+}
+
+//ボタン-ストローク
+.button-stroke {
+    font-size: 20px !important;
+    padding: 12px 20px;
+    display: inline-block;
+    border-radius: 100vh;
+    border: 1px solid $black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.button-stroke:hover {
+    transition: 0.3s;
+    background-color: $white;
+}
+
+//ボタン-ストローク
+.button-fill {
+    font-size: 20px !important;
+    padding: 12px 20px;
+    display: inline-block;
+    border-radius: 100vh;
+    background-color: $black;
+    cursor: pointer;
+}
+
+.gallery-copy {
+    h1 {
+        font-size: 200px;
+        letter-spacing: -0.1em;
+        line-height: 0.9;
+        margin-top: 40px;
+    }
+
+    p {
+        font-size: 32px;
+        line-height: 1.5em;
+        margin: 24px 0;
+    }
+}
+
+//作品ナビゲーション
+.work-nav {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 120px;
+
+    .work-nav-border {
+        width: 100%;
+        height: 2px;
+        background-color: $black;
+    }
+
+    a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $black;
+
+        .work-nav-info {
+            display: block;
+
+            p:nth-child(1) {
+                font-size: 20px;
+                padding-bottom: 4px;
+            }
+            p:nth-child(2) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .right {
+        flex-flow: row-reverse;
+
+        .back-nav {
+            transform: rotate(180deg);
+        }
+
+        .work-nav-info {
+            p {
+                text-align: right;
+            }
+        }
+    }
+}
+
+.vertical {
+    display: flex;
+    margin-top: 0;
+    width: auto;
+    height: 100%;
+    margin: 0 80px;
+
+    .work-nav-border {
+        width: 2px;
+        height: 100%;
+    }
+
+    a {
+        width: auto;
+        height: 100%;
+        flex-direction: column;
+
+        .work-nav-info {
+            display: flex;
+
+            p {
+                writing-mode: vertical-rl;
+            }
+
+            p:nth-child(1) {
+                padding-bottom: 0;
+                padding-right: 4px;
+            }
+        }
+    }
+
+    .right {
+        flex-flow: column-reverse;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .gallery-copy {
+        h1 {
+            font-size: 144px;
+        }
+    }
+}
+
+@media screen and (max-width: 799px) {
+    //レスポンシブ
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    .side-bar {
+        flex: 0 0 80px;
+        padding: 16px;
+    }
+
+    .top-logo {
+        a {
+            margin: 24px 8px;
+        }
+    }
+
+    .level-nav {
+        li {
+            a {
+                width: 44px;
+                height: 44px;
+                line-height: 44px;
+                margin: 12px 0px;
+                font-size: 14px;
+                border: solid 1px #ffffff;
+            }
+        }
+    }
+
+    .back-nav {
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        margin: 0px;
+        font-size: 14px;
+
+        img {
+            width: 12px;
+        }
+    }
+
+    .social-link {
+        flex-direction: column;
+
+        li {
+            a {
+                padding: 8px 0px;
+            }
+        }
+    }
+
+    #nav-color,
+    #nav-color-f {
+        width: 4px;
+    }
+
+    //ギャラリータイトル
+    .gallery-title {
+        padding: 24px;
+
+        p:nth-child(1) {
+            font-size: 16px;
+        }
+
+        p:nth-child(2) {
+            font-size: 40px;
+        }
+    }
+
+    //ギャラリーナンバー
+    .gallery-num {
+        padding: 24px;
+    }
+
+    .gallery-copy {
+        h1 {
+            font-size: 104px;
+            margin-top: 24px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    }
+
+    //作品ナビゲーション
+    .work-nav {
+        margin-top: 80px;
+
+        .work-nav-border {
+            height: 1px;
+            width: 100%;
+        }
+
+        a {
+            .back-nav {
+                margin: 16px;
+            }
+
+            .work-nav-info {
+                p:nth-child(1) {
+                    font-size: 16px;
+                    padding-bottom: 2px;
+                }
+                p:nth-child(2) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .vertical {
+        margin: 0 40px;
+
+        .work-nav-border {
+            width: 1px;
+            height: 100%;
+        }
+
+        a {
+            .work-nav-info {
+                p:nth-child(1) {
+                    padding-right: 2px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 519px) {
+    .gallery-copy {
+        h1 {
+            font-size: 88px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+}

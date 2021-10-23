@@ -1,0 +1,139 @@
+.gallery-title {
+  position: fixed; }
+
+.side-bar {
+  justify-content: center; }
+
+.content .progress-container {
+  height: 100%;
+  display: flex;
+  padding: 104px 0;
+  box-sizing: border-box;
+  align-items: center; }
+  .content .progress-container .work-final {
+    display: flex;
+    width: auto;
+    height: 100%;
+    align-items: center; }
+    .content .progress-container .work-final .work-image {
+      height: 100%;
+      width: 100vw;
+      display: flex;
+      padding: 0 40px;
+      box-sizing: border-box;
+      z-index: 100; }
+      .content .progress-container .work-final .work-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; }
+    .content .progress-container .work-final .work-info {
+      width: 60vw;
+      box-sizing: border-box;
+      display: flex; }
+      .content .progress-container .work-final .work-info .work-about {
+        width: 40%;
+        box-sizing: border-box;
+        padding-right: 24px; }
+        .content .progress-container .work-final .work-info .work-about p {
+          line-height: 1.5em; }
+        .content .progress-container .work-final .work-info .work-about p:nth-child(1) {
+          font-size: 48px; }
+        .content .progress-container .work-final .work-info .work-about p:nth-child(2) {
+          font-size: 32px;
+          margin-bottom: 24px; }
+        .content .progress-container .work-final .work-info .work-about p:nth-child(3) {
+          font-size: 20px;
+          margin-bottom: 24px; }
+        .content .progress-container .work-final .work-info .work-about p:nth-child(4) {
+          font-size: 20px;
+          margin-bottom: 24px; }
+        .content .progress-container .work-final .work-info .work-about p:nth-child(5) {
+          font-size: 16px; }
+        .content .progress-container .work-final .work-info .work-about p:nth-child(6) {
+          font-size: 12px; }
+      .content .progress-container .work-final .work-info .work-description {
+        width: 60%;
+        box-sizing: border-box; }
+        .content .progress-container .work-final .work-info .work-description p {
+          font-size: 16px;
+          line-height: 1.5em; }
+  .content .progress-container .progress {
+    width: auto;
+    height: 100%; }
+    .content .progress-container .progress .progress-image {
+      height: calc(100% - 120px);
+      box-sizing: border-box;
+      z-index: 100; }
+      .content .progress-container .progress .progress-image img {
+        padding: 0 40px;
+        width: calc(100vw - 80px);
+        height: 100%;
+        object-fit: contain; }
+    .content .progress-container .progress .progress-description {
+      margin-top: 16px;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .content .progress-container .progress .progress-description p {
+        line-height: 160%;
+        letter-spacing: 0.04em;
+        text-align: center; }
+      .content .progress-container .progress .progress-description p:nth-child(1) {
+        font-size: 24px; }
+      .content .progress-container .progress .progress-description p:nth-child(2) {
+        width: 40%;
+        max-width: 640px;
+        font-size: 16px; }
+
+@media screen and (max-width: 799px) {
+  .content .progress-container {
+    padding: 64px 0; }
+    .content .progress-container .work-final .work-image {
+      padding: 0 24px; }
+    .content .progress-container .work-final .work-info {
+      width: auto !important;
+      padding: 0 24px; }
+      .content .progress-container .work-final .work-info .work-about {
+        width: 100vw;
+        padding: 0 24px; }
+        .content .progress-container .work-final .work-info .work-about p {
+          line-height: 1.5em; }
+        .content .progress-container .work-final .work-info .work-about p:nth-child(1) {
+          font-size: 32px; }
+        .content .progress-container .work-final .work-info .work-about p:nth-child(2) {
+          font-size: 20px;
+          margin-bottom: 20px; }
+        .content .progress-container .work-final .work-info .work-about p:nth-child(3) {
+          font-size: 16px;
+          margin-bottom: 20px; }
+        .content .progress-container .work-final .work-info .work-about p:nth-child(4) {
+          font-size: 16px;
+          margin-bottom: 20px; }
+        .content .progress-container .work-final .work-info .work-about p:nth-child(5) {
+          font-size: 14px; }
+        .content .progress-container .work-final .work-info .work-about p:nth-child(6) {
+          font-size: 12px; }
+      .content .progress-container .work-final .work-info .work-description {
+        width: 100vw;
+        padding: 24px; }
+        .content .progress-container .work-final .work-info .work-description p {
+          font-size: 12px;
+          line-height: 1.5em; }
+    .content .progress-container .progress .progress-image img {
+      padding: 0 24px;
+      width: calc(100vw - 48px); }
+    .content .progress-container .progress .progress-description {
+      margin-top: 0; }
+      .content .progress-container .progress .progress-description p {
+        width: 100%;
+        text-align: center;
+        padding: 0 24px;
+        box-sizing: border-box; }
+      .content .progress-container .progress .progress-description p:nth-child(1) {
+        font-size: 20px; }
+      .content .progress-container .progress .progress-description p:nth-child(2) {
+        font-size: 12px;
+        width: 100%; } }
+
+/*# sourceMappingURL=hensen.css.map */
