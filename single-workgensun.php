@@ -93,7 +93,6 @@ Template Post Type: post
     <?php wp_footer(); ?>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/work-loading.js"></script>
 <script>
@@ -168,7 +167,6 @@ Template Post Type: post
         .on("progress", function(event) {
             zoom.seek(zoom.duration * event.progress);
         })
-        .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
 </script>
 
