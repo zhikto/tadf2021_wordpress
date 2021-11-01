@@ -10,7 +10,7 @@ mapAnime
         translateX: [-20, 0],
         translateY: [20, 0],
         delay: anime.stagger(100),
-        duration: 1000,
+        duration: 800,
         easing: "easeInOutExpo"
     })
 
@@ -18,7 +18,7 @@ mapAnime
         targets: ".floor p",
         translateX: [-40, 0],
         opacity: [0, 1],
-        duration: 1000,
+        duration: 800,
         delay: anime.stagger(100),
         easing: "easeInOutExpo"
     })
@@ -27,7 +27,7 @@ mapAnime
         targets: ".map-scroll-bar",
         scaleX: [0, 1],
         opacity: [0, 1],
-        duration: 1000,
+        duration: 800,
         delay: anime.stagger(200),
         easing: "easeInOutExpo"
     }, 1500)
@@ -36,9 +36,9 @@ mapAnime
         targets: ".tadf-square",
         scale: [0.5, 1],
         opacity: [0, 1],
-        duration: 1000,
+        duration: 800,
         easing: "easeInOutExpo"
-    })
+    }, 1500)
 
 jQuery(function ($) {
     var path = location.pathname;
