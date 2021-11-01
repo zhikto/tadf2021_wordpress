@@ -1,4 +1,4 @@
-var mapAnime = anime({
+var mapAnime = anime.timeline({
     autoplay: false
 });
 
