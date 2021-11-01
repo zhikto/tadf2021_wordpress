@@ -1,12 +1,36 @@
 var mapAnime = anime({
-    targets: '.floor-box li',
-    easing: 'easeInOutQuad',
-    opacity: [0, 1],
-    translateZ: [20, 0],
-    duration: 400,
-    autoplay: false,
-    delay: (el, i) => 100 + 100 * i
+    autoplay: false
 });
+
+mapAnime
+    .add({
+        targets: '.floor-box li',
+        easing: 'easeInOutQuad',
+        opacity: [0, 1],
+        translateX: [-20, 0],
+        translateY: [20, 0],
+        delay: anime.stagger(100),
+        duration: 1000,
+        easing: "easeInOutExpo"
+    })
+
+    .add({
+        targets: ".floor p",
+        translateX: [-40, 0],
+        opacity: [0, 1],
+        duration: 1000,
+        delay: anime.stagger(100),
+        easing: "easeInOutExpo"
+    })
+
+    .add({
+        targets: ".map-scroll-bar",
+        scaleX: [0, 1],
+        opacity: [0, 1],
+        duration: 1000,
+        delay: anime.stagger(200),
+        easing: "easeInOutExpo"
+    }, 1500)
 
 jQuery(function ($) {
     var path = location.pathname;
