@@ -32,6 +32,14 @@ mapAnime
         easing: "easeInOutExpo"
     }, 1500)
 
+    .add({
+        targets: ".tadf-square",
+        scale: [0.5, 1],
+        opacity: [0, 1],
+        duration: 1000,
+        easing: "easeInOutExpo"
+    })
+
 jQuery(function ($) {
     var path = location.pathname;
 
