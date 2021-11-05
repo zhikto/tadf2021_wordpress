@@ -19,7 +19,7 @@
     width: 100vw; }
   to {
     width: 8px; } }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   @keyframes wipe {
     from {
       width: 100vw; }

@@ -222,7 +222,7 @@
   .vertical .right {
     flex-flow: column-reverse; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .gallery-copy h1 {
     font-size: 144px; } }
 @media screen and (max-width: 799px) {

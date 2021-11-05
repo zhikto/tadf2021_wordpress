@@ -41,7 +41,7 @@ body {
     color: #FFFFFF;
     background-color: #000000; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .entry span {
     font-size: 12px; }
   .entry h1 {
