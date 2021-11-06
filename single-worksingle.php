@@ -22,6 +22,7 @@ Template Post Type: post
 
     <!--スクリプト-->
     <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?60e7e60f7a1041439d156a2eac1e02e5" charset="utf-8"></script>
+    <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?6185f33081104a5bba27618eac1e02e5" charset="utf-8"></script>
 
     <title>筑波大学 芸術祭 2021 / TSUKUBA ART&DESIGN FESTIVAL 2021</title>
     <?php wp_head(); ?>

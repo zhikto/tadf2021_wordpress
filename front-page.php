@@ -15,6 +15,7 @@
 
     <!--スクリプト-->
     <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?60e7e60f7a1041439d156a2eac1e02e5" charset="utf-8"></script>
+    <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?6185f33081104a5bba27618eac1e02e5" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js" integrity="sha512-G1R66RZMhyLDEcAu92/Kv4sWNypnEiJcM6yhe0PNyiYDaMAKpMrJ6ZLR67xC/RMNGRa8Pm9TxtO8a98F6Ct+Gw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <?php wp_enqueue_script('jquery'); ?>
 
